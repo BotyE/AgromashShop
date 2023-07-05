@@ -1,0 +1,7 @@
+FROM node:alpine as build
+WORKDIR /server
+RUN apk add --update npm
+COPY . .
+RUN npm ci 
+CMD ["sh", "-c", "npm run start"]
+
