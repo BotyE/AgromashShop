@@ -1,0 +1,321 @@
+.search_input {
+    border: none;
+    background: #D9D9D9;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    color: #000000;
+    font-size: 18px;
+    line-height: 32px;
+}
+.search_input:focus {
+    border: none;
+    background: #D9D9D9;
+    outline: none;
+    font-size: 18px;
+}
+.form {
+    grid-area: "search";
+    width: 500px;
+}
+.search_device {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-bottom: 10px;
+}
+.device_list {
+    position: absolute;
+    z-index: 100;
+    margin-top: -10px;
+    background-color: white;
+    width: inherit;
+    padding: 20px 10px 10px 10px;
+    border-left: 2px solid #D9D9D9;
+    border-right: 2px solid #D9D9D9;
+    border-bottom: 2px solid #D9D9D9;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+}
+
+
+.name {
+    margin-bottom: 0px;
+}
+
+.search_form {
+    display: flex;
+    position: relative;
+    width: 500px;
+    height: 40px;
+    background: #D9D9D9;
+    border-radius: 10px;
+    margin-right: 20px;
+    z-index: 200;
+}
+.search_img {
+    width: 24px;
+    height: 24px;
+    margin: 8px 15px;
+}
+
+.btns {
+    grid-area: "btns"
+}
+
+.catalog_menu {
+    display: flex;
+    align-items: center;
+    background-color: #069942;
+    border-radius: 10px;
+    margin: 0px 50px;
+    color:  white;
+    text-decoration: none;
+    width: 170px;
+    padding: 0px;
+    grid-area: "menu";
+}
+.catalog_menu:hover {
+    color:  white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: #069942;
+    border-radius: 10px;
+    margin: 0px 50px;
+    color:  white;
+    text-decoration: none;
+    width: 170px;
+}
+button:focus { outline: none;
+border: none; 
+}
+.menu_img {
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+}
+.menu_text {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 15px;   
+    text-decoration: none;
+}
+
+.navbar_container {
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    
+}
+
+.basket_btn {
+    background-color: white;
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 32px;
+    display: flex;
+    margin: auto 0px;
+    color: #000000;
+    align-items: center;
+}
+
+.admin_btn {
+    background-color: white;
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    display: flex;
+    margin: auto 0px;
+    color: #000000;
+}
+
+.search_btn {
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 32px;
+    display: flex;
+    margin: auto 0px;
+}
+
+.login_img {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+.logo {
+    grid-area: "logo";
+}
+
+.info_link {
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
+.info_link:hover {
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
+.info_list {
+    display: flex;
+    margin: auto 10px;
+    white-space: nowrap;
+}
+
+.info_phone {
+    margin-left: auto;
+    margin-right: 0em;
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
+.navbar_info_ul {
+    display: flex;
+    padding: 0px;
+}
+
+.navbar_info {
+    display: flex;
+    margin: 10px 18%;
+}
+.container {
+    display: grid;
+    grid-template-areas: "logo menu search btns";
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_btn:hover,.search_btn:focus,.search_btn:active, 
+.search_btn:active:focus:not(:disabled):not(.disabled),
+.btn:focus, .btn:active, .btn:hover{
+    box-shadow: none!important;
+    outline: 0;
+}
+
+.info_phone:hover,.info_phone:focus,.info_phone:active, 
+.info_phone:active:focus:not(:disabled):not(.disabled) {
+    box-shadow: none!important;
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
+.basket_btn:hover,.basket_btn:focus,.basket_btn:active, 
+.basket_btn:active:focus:not(:disabled):not(.disabled),
+.btn:focus, .btn:active, .btn:hover{
+    box-shadow: none!important;
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+.search_input:hover,.search_input:focus,.search_input:active, 
+.search_input:active:focus:not(:disabled):not(.disabled),
+.btn:focus, .btn:active, .btn:hover{
+    box-shadow: none!important;
+    outline: 0;
+    
+}
+
+.catalog_menu:hover,.catalog_menu:focus,.catalog_menu:active, 
+.catalog_menu:active:focus:not(:disabled):not(.disabled),
+.btn:focus, .btn:active, .btn:hover{
+    box-shadow: none!important;
+    outline: none;
+
+}
+
+
+@media (max-width: 1570px)
+{
+    .form { 
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row: 2;
+        margin: 5px 0px;
+        width: 100%;
+        justify-content: center;
+    }
+    .device_list {
+        position: relative;
+    }
+    .search_form { 
+        width: 100%;
+        justify-content: center;
+    }
+    .navbar_info_ul {
+        margin: auto;
+    }
+    .navbar_info {
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 868px)
+{
+    .navbar_container {
+        width: 100%;
+        padding-top: 10px;
+    }
+    .form { 
+        grid-row: 3;
+        margin: 5px 0px;
+        align-items: start;
+    }
+    .container {
+        margin: 0px 20px;
+        justify-content: space-between;
+    }
+
+    .name {
+        display: none;
+    }
+    .btns {
+        grid-column-start: 4;
+      
+    }
+    .logo {
+        grid-column: 1;
+        margin-right: 0px;
+    }
+
+    .catalog_menu { 
+        grid-column: 1;
+        grid-row: 2;
+        margin: 0px;
+    }
+    .search_form { 
+        width: 100%;
+    }
+    .name { display: none;}
+
+    .btns {
+        margin-left: auto;
+        margin-right: 0em;
+    }
+}

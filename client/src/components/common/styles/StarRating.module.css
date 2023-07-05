@@ -1,0 +1,8 @@
+input[type="radio"].control {
+    display: none;
+}
+
+.star {
+    transition: color 200ms;
+    color: red;
+}

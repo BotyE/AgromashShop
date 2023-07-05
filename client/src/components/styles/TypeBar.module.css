@@ -1,0 +1,118 @@
+.type__bar {
+    display: flex;
+    flex-direction: column;
+    background-color: #069942;
+    border-radius: 10px;
+    max-height: 1000px;
+
+}
+
+.menu__category {
+    display: flex;
+    border: none;
+    background-color: #058238;
+    border-radius: 10px 10px 20px 20px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.menu__category:hover, .menu__category:active {
+    background-color: #058238;
+    color: white;
+}
+
+.menu__category span {
+    font-size: 28px;
+}
+
+.category__li {
+    background-color: inherit;
+    border: none;
+    color: white;
+    display: flex;
+    font-size: calc(15px + 27*((100vw - 320px)/1920));
+    align-items: center;
+    background-color: #069942;
+    border-radius: 10px;
+    color:  white;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 40px;
+    padding: 10px;
+    white-space: nowrap;
+
+}
+
+.category__ul {
+
+}
+
+.category__li.active {
+    background-color: #058238;
+}
+
+.category__more {
+    background-color: inherit;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: #069942;
+    border-radius: 10px;
+
+    color:  white;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: 1em;
+    margin-left: 20px;
+    outline: none;
+}
+.category__more:hover {
+
+    text-decoration: none;
+}
+.category__more:focus { outline: none; }
+
+.more_more {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(22px + 5*((100vw )/1920));
+    line-height: 39px;
+    color: #FFFFFF;
+}
+
+
+.category__img {
+    width: 24px;
+    height: 24px;
+    margin-right: 11px;
+}
+
+.more__img { 
+    width: calc(22px + 5*((100vw )/1920));
+    height: calc(22px + 5*((100vw )/1920));
+}
+
+.category__li {
+    font-size: calc(12px + 5*((100vw )/1920));
+    line-height: calc(12px + 5*((100vw )/1920));
+    font-family: 'Montserrat';
+}
+
+.category__more:hover,.category__more:focus,.category__more:active, 
+.category__more:active:focus:not(:disabled):not(.disabled),
+.btn:focus, .btn:active, .btn:hover{
+    box-shadow: none!important;
+    outline: none;
+}
+
+.menu__category:hover,.menu__category:focus,.menu__category:active, 
+.menu__category:active:focus:not(:disabled):not(.disabled),
+.menu__category:focus, .menu__category:active, .menu__category:hover{
+    box-shadow: none!important;
+    outline: none;
+}

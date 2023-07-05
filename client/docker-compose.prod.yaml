@@ -1,0 +1,40 @@
+version: '3.5'
+
+services:
+  postgres:
+        container_name: postgres
+        ports:                       #add line.
+          - '5432:5432'
+        hostname: localhost
+        environment:   
+          - POSTGRES_DB=postgres        # add line.
+          - POSTGRES_USER=postgres
+          - POSTGRES_PASSWORD=qqww11eerr
+        image: postgres:15-alpine
+        volumes:
+          - ./postgres:/var/lib/postgresql/data
+        restart: always
+  client: 
+    image: client-prod-i
+    build: 
+      dockerfile: Dockerfile.prod
+    depends_on:
+      - server
+    container_name: client-prod-c
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production
+    restart: always
+  server:
+    image: server-prod-i
+    depends_on:
+      - postgres
+    build: 
+      dockerfile: Dockerfile.prod
+    container_name: server-prod-c
+    ports:
+      - "8080:8080"
+    restart: always
+    
+    

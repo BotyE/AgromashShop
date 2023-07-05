@@ -1,0 +1,75 @@
+.catalog_container {
+    display: flex;
+}
+
+.container {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.names {
+    margin: 0px 0px 20px 70px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.catalog_list {
+    margin-left: 50px;
+}
+
+.category, .tittle {
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: black;
+
+}
+
+.tittle {
+    font-weight: 700;
+    font-size: calc(25px + 5*((100vw )/1920))
+}
+
+.category::before {
+    content: "-";
+    margin-right: 10px;
+}
+
+.category {
+
+    margin-left: 10px;
+}
+
+
+
+
+
+.category:hover,.category:focus,.category:active, 
+.category:active:focus:not(:disabled):not(.disabled) {
+    box-shadow: none!important;
+    outline: none;
+    text-decoration: none;
+    color: black;
+}
+
+.tittle:hover,.tittle:focus,.tittle:active, 
+.tittle:active:focus:not(:disabled):not(.disabled) {
+    box-shadow: none!important;
+    outline: none;
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 870px)
+{
+    .names {
+        display: none;
+    }
+  .catalog_container {
+    flex-direction: column;
+  }
+
+  .catalog_list {
+    margin: 0px auto;
+}
+}

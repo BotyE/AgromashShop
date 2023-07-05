@@ -1,0 +1,30 @@
+.category_name { 
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: calc(20px + 17*((100vw - 320px)/1920));
+    line-height: 59px;
+    display: flex;
+    color: #000000;
+    padding-bottom: 30px;
+}
+
+.category_container {
+    margin: 100px auto 0px auto;
+}
+
+.product_list {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 768px)
+{ 
+    .product_list {
+        justify-content: center;
+    }
+
+}

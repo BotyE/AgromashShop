@@ -1,0 +1,14 @@
+.user_info{
+
+}
+
+.user {
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+@media (max-width: 770px)
+{
+    .user {
+        margin-right: 0px;
+    }
+}

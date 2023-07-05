@@ -1,0 +1,71 @@
+.info {
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+}
+
+.row {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.row:not(:last-child) {
+    margin-right: 50px;
+}
+
+.tittle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.disc {
+    text-align: center;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: center;
+text-align: center;
+width: 100%;
+
+color: #000000;
+}
+
+.avatar { 
+    margin-bottom: 30px;
+}
+
+@media (max-width: 970px)
+{
+
+    .row:nth-child(even) {
+        margin-right: 0px;
+    }
+
+   .info {
+    grid-template-columns: repeat(2, 1fr);
+   }
+} 
+
+@media (max-width: 670px)
+{
+    .row:nth-child(odd) {
+        margin-right: 0px;
+    }
+
+   .info {
+    grid-template-columns: repeat(1, 1fr);
+   }
+} 

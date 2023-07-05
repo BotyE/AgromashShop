@@ -1,0 +1,83 @@
+.modal_body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+
+.modal_window {
+    position: absolute;
+    width: 70%;
+    border-radius: 0px;
+    margin: 0px 15%;
+}
+
+.modal_body>* {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name { 
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height, or 150% */
+
+display: flex;
+align-items: center;
+
+color: #000000;
+padding-top: 5px;
+}
+
+.modal_tittle {
+    margin: 0px auto;
+}
+.avatar {
+    width: 300px;
+}
+
+@media (max-width: 1770px)
+{ 
+    .modal_window {
+        width: 90%;
+        border-radius: 0px;
+        margin: 0px 5%;
+    }
+
+
+}
+
+@media (max-width: 1340px)
+{ 
+    .modal_body {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width: 1040px)
+{ 
+    .modal_window {
+        width: 80%;
+        border-radius: 0px;
+        margin: 0px 10%;
+    }
+    .modal_body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 780px)
+{ 
+    .modal_body {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        margin: 0px auto;
+        padding-left: 0px;
+    }
+
+}

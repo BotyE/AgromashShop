@@ -1,0 +1,129 @@
+.product {
+    max-width: 250px;
+    margin: 30px;
+}
+.excel_btn {
+    background-color: #4E9443;
+    color: white;
+    height: 100%;
+}
+
+.add_to_cart {
+    margin-left: auto;
+    margin-right: 0em;
+    background-color: #4E9443;
+    color: #FFFFFF;
+    height: 100%;
+    border-radius: 0px;
+}
+.cart { 
+    height: 100%;
+}
+
+.under_order {
+    margin-left: auto;
+    margin-right: 0em;
+    background-color: #4E9443;
+    color: #FFFFFF;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.avatar {
+     width: 250px;
+     height: 250px;
+}
+
+.add_product_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    background: #D9D9D9;
+    margin: 0px;
+    align-items: center;
+    width: 100%;
+}
+
+.minus {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 49px;
+    display: flex;
+    color: #000000;
+}
+
+.count {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    margin: 0px;
+    display: flex;
+    color: #000000;
+    justify-content: center;
+}
+
+.plus {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 49px;
+    color: #000000;
+}
+
+.count_and_art {
+    display: flex;
+}
+
+.countity { 
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+}
+
+.art { 
+    margin-left: 10px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: auto;
+    margin-right: 0em;
+    color: #000000;
+}
+
+.tittle {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+}
+
+.price {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    color: #000000;
+}
+
+.price_container {
+    grid-column: 3/3;
+}
+
+.admin_select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 80px;
+    margin: 15px;
+    border-radius: 0px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,15 @@
+.follow {
+    width: 80%;
+    margin: 0px auto;
+}
+
+@media (max-width: 870px)
+{ 
+
+    .follow { 
+        width: 100%;
+    }
+    .tittle {
+        text-align: center;
+    }
+}

@@ -1,0 +1,138 @@
+.reg__label {
+    margin: 20px 0px 5px 0px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    color: #000000;
+    font-size: 20px;
+    line-height: 24px;
+
+}
+.reg__tittle {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #555555;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0 auto 35px auto;
+    text-align: center;
+}
+
+.reg__input {
+    border:0px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px #888;
+    width: 600px;
+    height: 50px;
+    background-color: #EBEBEB;
+}
+.reg__input:-webkit-autofill,
+.reg__input:-webkit-autofill:hover, 
+.reg__input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.reg__input::placeholder {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    color: #000000;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.reg__input:focus {
+    border: 0px;
+}
+
+.btn_custom_login {
+    box-shadow: 0px 2px 10px #888;
+    margin-top: 40px;
+    background-color: #4E9443;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    height: 50px;
+    border-radius: 5px;
+    
+}
+.login_bnts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    margin: 0px;
+}
+
+.btn_custom_login span {
+    padding: 30px;
+}
+
+.btn_custom_reg span {
+    padding: 40px;
+}
+
+
+.btn_custom_login:hover {
+   
+    color: #FFFFFF;
+}
+
+.btn_custom_reg {
+    border: #4E9443 1px solid;
+    width: fit-content;
+    margin-top: 40px;
+        font-family: 'Montserrat';
+    font-weight: 300;
+    height: 50px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #4E9443;
+    border-radius: 5px;
+}
+
+.btn_custom_reg:hover {
+    color: #4E9443;
+}
+
+.custom_small_btn {
+    height: 50px;
+}
+
+.fast_login {
+    margin: 50px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fast_login span {
+    margin: 0px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+} 
+
+.fast_login_img {
+    margin: 30px 0px 0px 10px;
+}
+.fast_login_img img:not(:last-child) {
+    margin-right: 18px;
+}
+
+@media (max-width: 670px)
+{
+    .reg__input {
+        width: 300px;
+    }
+    .login_bnts {
+        flex-direction: column;
+        align-items: start;
+    }
+}

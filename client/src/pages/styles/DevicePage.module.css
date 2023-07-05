@@ -1,0 +1,239 @@
+
+.container {
+    width: 65%;
+    margin: 0 auto;
+    display: grid;
+}
+
+.device {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.under_photo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+.device_name {
+   font-size: calc(25px + 5*((100vw )/1920))
+}
+.product {
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.discription {
+    padding: 0px 50px;
+    grid-column: 2/2;
+}
+
+.heart {
+    margin: auto 0px;
+    margin-left: 130px;
+}
+
+.rating {
+    margin: auto 0px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 39px;
+    /* identical to box height */
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+}
+
+.articul {
+    margin: auto 0px auto 10px;
+}
+
+.add_to_cart {
+    background-color: #4E9443;
+    color: #FFFFFF;
+    height: 100%;
+    border-radius: 0px;
+}
+
+.cart {
+    filter: invert(1);
+}
+.number {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+.avatar__product {
+    
+}
+.name_product {
+ margin: 0px 50px;
+}
+
+.catalog_tittle {
+    display: flex;
+    font-size: 30px;
+}
+
+.price_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+
+
+    color: #000000;
+}
+
+.add_product_container {
+    display: flex;
+    background: #D9D9D9;
+    margin: 0px;
+    padding: 0px 10px;
+    width: 200px;
+}
+
+.minus {
+font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 49px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.count {
+font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    /* identical to box height */
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.plus {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 49px;
+    /* identical to box height */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.available {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+margin-top: 5px;
+}
+
+.catalog_tittle:hover,.catalog_tittle:focus,.catalog_tittle:active, 
+.catalog_tittle:active:focus:not(:disabled):not(.disabled), .catalog_tittle {
+    box-shadow: none!important;
+    outline: none;
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 1570px)
+{
+    .product {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .discription {
+        grid-column: 1/1;
+        grid-row: 2/2;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 870px)
+{
+    .container {
+        width: 95%;
+        
+    }
+    .device {
+        margin: 0 auto;
+    }
+
+    .product {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .catalog_tittle {
+        display: none;
+    }
+    .price_container {
+        margin-left: 0px;
+        display: block;
+        justify-content: center;
+        width: 300px;
+
+    }
+
+    .price {
+        width: 300px;
+        grid-column: 1/1;
+        grid-row: 2/2;
+    }
+    .discription {
+        grid-row: 3/3;
+        margin-top: 50px;
+    }
+}

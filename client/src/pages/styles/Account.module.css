@@ -1,0 +1,189 @@
+.table {
+    margin-left: 5%;
+    width: 95%;
+}
+.delete {
+    background-color: #069942;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: calc(12px + 5*((100vw )/1920));
+}
+
+.contact_infimation {
+
+}
+.profile__input {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+
+    color: #000000;
+
+    height: 50px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.form__profile {
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+.info__profile {
+    padding-left: 50px;
+}
+
+.change_btns {
+    margin-left: 180px;
+}
+
+
+.first_row {
+    background-color: #D9D9D9;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    display: flex;
+    color: #000000;
+    justify-content: space-around;
+}
+
+.first_row td {
+    margin: 0px 10px;
+}
+
+.next_row {
+
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+.buys_container {
+    margin-bottom: 100px;
+}
+
+.boths {
+    margin-left: 50px;
+}
+.number {
+    width: 2%;
+}
+
+.data {
+    width: 7%;
+}
+
+.name {
+    width: 15%;
+}
+.status {
+    width: 7%;
+}
+
+.summ {
+    width: 7%;
+}
+
+tr.price_td>td {
+    padding-bottom: 30px;
+}
+
+.reg__label {
+    margin: 20px 0px 5px 0px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+color: #000000;
+}
+.reg__tittle {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #555555;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0 auto 35px auto;
+    text-align: center;
+}
+
+.reg__input {
+    border:0px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px #888;
+    width: 600px;
+    height: 50px;
+    background-color: #EBEBEB;
+}
+
+.change_btns {
+    box-shadow: 0px 2px 10px #888;
+    margin-top: 40px;
+    background-color: #4E9443;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    height: 50px;
+    border-radius: 5px;
+    
+}
+
+.title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.container { 
+    width: 75%;
+    margin: 0 auto;
+}
+
+.text {
+    font-size: calc(12px + 5*((100vw )/1920))
+}
+
+
+.delete:hover,.delete:focus,.delete:active, 
+.delete:active:focus:not(:disabled):not(.disabled) {
+    box-shadow: none!important;
+    text-decoration: none;
+    color: white;
+    outline: none;
+}
+@media (max-width: 670px)
+{
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 870px)
+{
+    .container {
+        width: 90%;
+    }
+    .table { 
+        margin: 0px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.footer_info {
+    display: flex;
+    margin: 50px 0px;
+}
+
+.footer_left {
+    margin-right: 30px;
+}
+
+.Footer {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    line-height: 40px;
+    color: #000000;
+    margin: 100px auto;
+}
+
+.footer_ul {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px 10px 10px;
+    
+}
+
+.contacts_list {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+.list_item {
+    display: flex;
+    margin: 10px;
+}
+
+.footer_header {
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+.footer_li {
+    font-weight: 400;
+    font-size: calc(15px + 5*((100vw - 320px)/1920));
+    color: inherit;
+    white-space: nowrap;
+}
+
+.footer_img {
+    width: 300px;
+}
+
+.footer_phone {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    line-height: 49px;
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+    white-space: nowrap;
+}
+
+.footer_ph {
+    margin: 20px 0px;
+}
+
+.footer_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_phone:hover,.footer_phone:focus,.footer_phone:active, 
+.footer_phone:active:focus:not(:disabled):not(.disabled),
+.footer_li:hover,.footer_li:focus,.footer_li:active, 
+.footer_li:active:focus:not(:disabled):not(.disabled){
+    box-shadow: none!important;
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
+@media (max-width: 1270px)
+{
+
+    .footer_info {
+        flex-wrap: nowrap;
+        margin: 0px auto;
+        justify-content: center;
+    }
+
+.Footer {
+    flex-direction: column-reverse;
+}
+
+.footer_ul {
+    margin: 50px 10%;
+}
+.footer_left {
+    margin: 0px;
+    justify-content: center;
+}
+}
+
+@media (max-width: 970px)
+{
+    .footer_info {
+        flex-wrap: wrap;
+    }
+
+    .footer_ul {
+        margin: 50px 5%;
+    }
+
+.footer_phone {
+
+    font-size: 35px;
+}
+}
